@@ -1,0 +1,74 @@
+body {
+    background-image: url("images/melna.jpg");
+    background-repeat:fill;
+    background-size:cover;
+}
+
+.saloni{
+    background-color: grey;
+}
+
+.mainbox{
+    color: white;
+    width: 800px;
+    margin: 0px auto;
+
+}
+.menu{
+    background-color: grey;
+}
+
+.leftside{
+    background-color: aqua;
+    width: 100px;
+    float:left;
+}
+
+.main{
+    vertical-align: center;
+}
+
+.rightside{
+    background-color: blueviolet;
+    width: 100px;
+    float:left;
+}
+
+.footer{
+    background-color: brown;
+}
+
+.menu{
+    height: 37px;
+    text-align: center;
+}
+
+.menu>ul>li{
+    display:inline;
+    padding:20px 20px 10px 20px;
+    background-color: grey;
+    position: relative;
+    top:5px;
+    font-family:Verdana,serif;
+    font-size: 13px;
+}
+
+.menu>ul>li>a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.gallery{
+    max-width: 200px;
+    vertical-align: left;
+
+}
+
+.mgallery{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+.videofails{
+    position: relative;
+}
