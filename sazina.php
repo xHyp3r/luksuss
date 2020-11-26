@@ -20,7 +20,7 @@ error_reporting(E_ALL);
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand">
+    <a class="navbar-brand" href = "index.php">
         <img src="images/mainlogo.png" alt="logo" style="width:90px;">
     </a>
 
@@ -62,21 +62,24 @@ error_reporting(E_ALL);
 <section class="contactus-one" id="contactus">
 <div class = "container">
 <div class="contact-form"><!-- contact form -->
-                        <form class="row" id="contact" name="contact" method="post" >
+                        <form class="row" method="post">
                             <div class="form-group col-md-6">
+								<label for="cName">Vārds</label>
                                 <input type="text" class="form-control" name="cName" id="cName" placeholder="Vārds" required >
                             </div>
                             <div class="form-group col-md-6">
+								<label for="cSurname">Uzvārds</label>
                                 <input type="text" class="form-control" name="cSurname" id="cSurname" placeholder="Uzvārds" required >
                             </div>
                             <div class="form-group col-md-12">
+								<label for="cEmail">E-pasts</label>
                                 <input type="email" class="form-control" name="cEmail" id="cEmail" placeholder="E-pasts" required >
                             </div>
                             <div class="form-group col-md-12">
-								<label for="InputMessage">Ziņojums/Atsauksme</label>
+								<label for="cMessage">Ziņojums/Atsauksme</label>
 								<textarea class="form-control" name="cMessage" id="cMessage" rows="4" required></textarea>
                             </div>
-                                <button class="btn btn-lg btn-primary btn-block text-uppercase">NOSŪTĪT</button>
+                                <button class="btn btn-lg btn-primary btn-block text-uppercase" name = "contact" type = "submit">NOSŪTĪT</button>
                         </form>
                     </div>
 				</div>

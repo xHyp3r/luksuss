@@ -20,7 +20,7 @@ error_reporting(E_ALL);
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand">
+    <a class="navbar-brand" href = "index.php">
         <img src="images/mainlogo.png" alt="logo" style="width:90px;">
     </a>
 
@@ -61,28 +61,30 @@ error_reporting(E_ALL);
             <div class="card card-signin my-5">
                 <div class="card-body">
                     <h5 class="card-title text-center">Reģistrēties</h5>
-                    <form action = "luxus" class="form-signin">
+                    <form action = "register" class="form-signin" method = "post">
                         <div class="form-label-group">
-                            <input type="email" name = "clientEmail" id="clientEmail" class="form-control" placeholder="Epasts" required autofocus>
+                            <input type="email" name = "clientEmail" id="clientEmail" class="form-control" placeholder="E-pasts" required autofocus>
                             <label for="clientEmail"></label>
                         </div>
-
+						<div class="form-label-group">
+                            <input type="text" name = "clientName" id="clientName" class="form-control" placeholder="Vārds" required>
+                            <label for="clientName"></label>
+                        </div>
+						<div class="form-label-group">
+                            <input type="text" name = "clientSurname" id="clientSurname" class="form-control" placeholder="Uzvārds" required>
+                            <label for="clientSurname"></label>
+                        </div>
                         <div class="form-label-group">
                             <input type="password" name = "clientPassword" id="clientPassword" class="form-control" placeholder="Parole" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Parolei jābūt vismaz ar vienu ciparu, vienu lielo un mazo burtu un jābūt vismaz 8 simbolu garam." required>
                             <label for="clientPassword"></label>
                         </div>
-						<div class="form-label-group">
-                            <input type="password" name = "clientPasswordRepeat" id="clientPasswordRepeat" class="form-control" placeholder="Atkārtoti parole" required>
-                            <label for="clientPasswordRepeat"></label>
-                        </div>
 						<p class="text-left"><a href="luxus">Ielogoties</a></p>
-						<button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" >Ienākt</button>
+						<button class="btn btn-lg btn-primary btn-block text-uppercase" name = "register" type="submit" >Reģistrēties</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 </body>
 </html>

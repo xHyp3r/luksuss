@@ -14,7 +14,7 @@
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand">
+    <a class="navbar-brand" href = "index.php">
         <img src="images/mainlogo.png" alt="logo" style="width:90px;">
     </a>
 
@@ -50,8 +50,12 @@
     </ul>
 </nav>
 </div>
-<th>
-404 Lapa nav Atrasta!
-</th>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <p style="font-size:80px ;" >  404 LAPA NAV ATRASTA</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>

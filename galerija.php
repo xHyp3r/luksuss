@@ -16,7 +16,7 @@
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand">
+    <a class="navbar-brand" href = "index.php">
         <img src="images/mainlogo.png" alt="logo" style="width:90px;">
     </a>
 

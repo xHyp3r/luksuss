@@ -20,7 +20,7 @@ error_reporting(E_ALL);
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand">
+    <a class="navbar-brand" href = "index.php">
         <img src="images/mainlogo.png" alt="logo" style="width:90px;">
     </a>
 	<!-- Links -->
@@ -66,22 +66,21 @@ error_reporting(E_ALL);
                     <h5 class="card-title text-center">Ielogoties</h5>
                     <form action = "index" class="form-signin">
                         <div class="form-label-group">
-                            <input type="email" id="inputEmail" class="form-control" placeholder="Epasts" required autofocus>
-                            <label for="inputEmail"></label>
+                            <input type="email" id="clientEmail" name = "clientEmail" class="form-control" placeholder="E-pasts" required autofocus>
+                            <label for="clientEmail"></label>
                         </div>
 
                         <div class="form-label-group">
-                            <input type="password" id="inputPassword" class="form-control" placeholder="Parole" required>
-                            <label for="inputPassword"></label>
+                            <input type="password" id="clientPassword" name = "clientPassword" class="form-control" placeholder="Parole" required>
+                            <label for="clientPassword"></label>
                         </div>
-						
 						<p class="text-left"><a href="register">Reģistrēties</a></p>
 
                         <div class="custom-control custom-checkbox mb-3">
                             <input type="checkbox" class="custom-control-input" id="customCheck1">
                             <label class="custom-control-label" for="customCheck1">Atcerēties paroli</label>
                         </div>
-							<button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" >Ienākt</button>
+							<button class="btn btn-lg btn-primary btn-block text-uppercase" name = "login" type="submit" >Ienākt</button>
                     </form>
                 </div>
             </div>
